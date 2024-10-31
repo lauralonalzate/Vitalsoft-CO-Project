@@ -1,0 +1,85 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans:wght@400;500;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800" />
+    <title>VitalSoft Company</title>
+    <link rel="icon" type="image/png" href="Captura de pantalla 2024-10-22 215947.png" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/diseño-raíz overflow-x-hidden" 
+         style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(62,77,91)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e'); font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;">
+        <div class="contenedor-layout flex h-full grow flex-col">
+            <header class="flex items-center justify-between border-b border-solid border-b-[#F0F2F5] px-10 py-3">
+                <div class="flex items-center gap-4 text-[#141414]">
+                    <h2 class="text-lg font-bold">VitalSoft</h2>
+                    <p class="text-sm font-medium text-[#3E4D5B]">Hola, Srta. Ramírez - Calcular Ingresos Proyectados de: Atención hospitalaria</p>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-9">
+                        <a class="text-sm font-medium" href="index.html">Menú principal</a>
+                        <a class="text-sm font-medium" href="reportesOcupacion.html">Generar reportes de ocupación</a>
+                        <a class="text-sm font-medium" href="paginaFactura.html">Facturación</a>
+                    </div>
+                    <img src="Captura de pantalla 2024-10-22 215947.png" alt="Logo de la empresa" class="h-10 w-10 rounded-full" />
+                </div>
+            </header>
+            <div class="px-40 flex flex-1 justify-center py-5">
+                <div class="contenedor-layout-contenido flex flex-col max-w-[960px] flex-1">
+                    <div class="flex flex-wrap justify-between gap-3 p-4">
+                        <div class="flex min-w-72 flex-col gap-3">
+                            <p class="text-[#141414] text-4xl font-black leading-tight tracking-[-0.033em]">Ingresos Proyectados</p>
+                            <p class="text-[#3E4D5B] text-base font-normal leading-normal">Factura para: Barrio Laureles Co., 127-01-01, Medellín - Factura #00123456 - #908</p>
+                        </div>
+                    </div>
+                    <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                        <label class="flex flex-col min-w-40 flex-1">
+                            <select class="form-input flex w-full min-w-0 flex-1 rounded-xl text-[#141414] border border-[#DBE1E6] bg-[#FFFFFF] h-14 placeholder:text-[#3E4D5B] p-[15px] text-base font-normal leading-normal focus:outline-0 focus:ring-0 focus:border-[#DBE1E6]" style="background-image: var(--select-button-svg);">
+                                <option value="">Seleccione mes para cálculo de ingresos</option>
+                                <option value="enero">Enero</option>
+                                <option value="febrero">Febrero</option>
+                                <option value="marzo">Marzo</option>
+                                <option value="abril">Abril</option>
+                                <option value="mayo">Mayo</option>
+                                <option value="junio">Junio</option>
+                                <option value="julio">Julio</option>
+                                <option value="agosto">Agosto</option>
+                                <option value="septiembre">Septiembre</option>
+                                <option value="octubre">Octubre</option>
+                                <option value="noviembre">Noviembre</option>
+                                <option value="diciembre">Diciembre</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                        <label class="flex flex-col min-w-40 flex-1">
+                            <input placeholder="Ingrese número de pacientes atendidos" class="form-input flex w-full min-w-0 flex-1 rounded-xl text-[#141414] border border-[#DBE1E6] bg-[#FFFFFF] h-14 placeholder:text-[#3E4D5B] p-[15px] text-base font-normal leading-normal focus:outline-0 focus:ring-0 focus:border-[#DBE1E6]" />
+                        </label>
+                    </div>
+                    <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                        <label class="flex flex-col min-w-40 flex-1">
+                            <input placeholder="Ingrese ocupación de camas (%)" class="form-input flex w-full min-w-0 flex-1 rounded-xl text-[#141414] border border-[#DBE1E6] bg-[#FFFFFF] h-14 placeholder:text-[#3E4D5B] p-[15px] text-base font-normal leading-normal focus:outline-0 focus:ring-0 focus:border-[#DBE1E6]" />
+                        </label>
+                    </div>
+                    <div class="flex justify-stretch">
+                        <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-start">
+                            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#359EFF] text-[#FFFFFF] text-base font-bold leading-normal tracking-[0.015em]"><span class="truncate">Urgencia</span></button>
+                            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#F0F2F5] text-[#141414] text-base font-bold leading-normal tracking-[0.015em]"><span class="truncate">Cirugía programada</span></button>
+                        </div>
+                    </div>
+                    <div class="flex px-4 py-3">
+                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 flex-1 bg-[#359EFF] text-[#FFFFFF] text-base font-bold leading-normal tracking-[0.015em]"><span class="truncate">Calcular Ingresos</span></button>
+                    </div>
+                </div>
+            </div>
+            <footer class="flex justify-center">
+                <div class="flex max-w-[960px] flex-1 flex-col">
+                    <footer class="flex flex-col gap-6 px-5 py-10 text-center">
+                        <p class="text-[#3E4D5B] text-base font-normal leading-normal">©2024 VitalSoft - Todos los derechos reservados</p>
+                    </footer>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
